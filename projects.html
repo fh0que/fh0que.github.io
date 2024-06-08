@@ -1,0 +1,615 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research | Jahidul</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Md Jahidul Islam</strong> </a>
+									<ul class="icons">
+									    <li><a href="files/resume_mji.pdf" class="icon solid fa-file"><span class="label">Resume</span></a></li>
+									    <li><a href="mailto: jahid@ece.ufl.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+									    <li><a href="https://scholar.google.com/citations?user=XuEzu5cAAAAJ&hl=en" class="icon brands fa-google"><span class="label">Google-scholar</span></a></li>
+									    <li><a href="https://www.researchgate.net/profile/Md_Jahidul_Islam6" class="icon brands fa-researchgate"><span class="label">Researchgate</span></a></li>
+									    <li><a href="https://twitter.com/XahidBuffon" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://github.com/xahidbuffon" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="https://www.linkedin.com/in/mdjahidulislam/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Section -->
+								<section, id="Proj">
+								<br> <br>
+									<header class="major">
+										<h2>Selected Projects</h2>
+									</header>
+									<div class="mini-posts", id="SVAM">
+										<article>
+											<h3>SVAM: Saliency-guided Visual Attention Modeling</h3>
+											<p>
+												<a href="http://www.roboticsproceedings.org/rss18/p048.pdf">Paper (RSS 2022)</a> &nbsp;
+												<a href="https://arxiv.org/pdf/2011.06252.pdf">ArXiv</a> &nbsp;
+												<a href="files/islam2022svam.txt">Bibliography</a> &nbsp;
+												<a href="https://github.com/xahidbuffon/SVAM-Net">GitHub</a> &nbsp;
+												<a href="http://irvlab.cs.umn.edu/resources/usod-dataset">USOD Test Dataset</a> &nbsp;
+												<a href="https://youtu.be/SxJcsoQw7KI">Video Demo</a>
+											</p>
+											
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<p align="justify">
+														<i>Where to look?</i>&mdash; is an intriguing problem of computer vision that deals with finding interesting or <i>salient</i> pixels in an image/video. 
+														As seen in this GANGNAM video!, the problem of <strong>Salient Object Detection (SOD)</strong> aims at identifying the most important or distinct objects in a scene. It is a successor to the human fixation prediction problem that aims to highlight pixels that human viewers would focus on at first glance.  
+													</p>
+												</div>
+												<div class="col-6 col-12-medium">
+													<a href="#SVAM" class="image"><img src="images/psy_gif.gif" alt=""/></a>
+												</div>
+												<p align="justify">
+													For visually-guided robots, the SOD capability enables them to model spatial attention to eventually make important navigation decisions. In this project, we present a holistic approach to saliency-guided visual attention modeling (<strong>SVAM</strong>) for use by autonomous underwater robots. Our proposed model, named <strong>SVAM-Net</strong>, integrates deep visual features at various scales and semantics for effective SOD in natural underwater images. The SVAM-Net architecture is configured in a unique way to jointly accommodate bottom-up and top-down learning within two separate branches of the network while sharing the same encoding layers. We design dedicated spatial attention modules (<strong>SAMs</strong>) along these learning pathways to exploit the coarse-level and top-level semantic features for SOD at four stages of abstractions. 
+												</p>
+												<div class="row">
+												<div class="col-3 col-12-small">
+													<p align="justify">
+													Specifically, the bottom-up pipeline extracts semantically rich features from early encoding layers, which facilitates an abstract yet accurate saliency prediction at a fast rate; we denote this decoupled bottom-up pipeline as <strong>SVAM-Net<sup>Light</sup></strong>. In addition, a residual refinement module (<strong>RRM</strong>) ensures fine-grained saliency estimation through the deeper top-down pipeline. Check out <a href="https://github.com/xahidbuffon/SVAM-Net">this repository</a> for the detailed SVAM-Net model architecture and its holistic learning pipeline.   
+													</p>
+												</div>
+												<div class="col-9 col-12-medium">
+													<a href="#SVAM" class="image"><img src="images/svamnet.jpg" alt="" /></a>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12 col-12-medium">
+													<a href="#SVAM" class="image"><img src="images/svam_res1.jpg" alt="" /></a> 
+												</div>
+											</div>
+											<p align="justify">
+												In the implementation, we incorporate comprehensive end-to-end supervision of SVAM-Net by large-scale diverse training data consisting of both terrestrial and underwater imagery. Subsequently, we validate the effectiveness of its learning components and various loss functions by extensive ablation experiments. In addition to using existing datasets, we release a new challenging test set named <a href="http://irvlab.cs.umn.edu/resources/usod-dataset">USOD</a> for the benchmark evaluation of SVAM-Net and other underwater SOD models. By a series of qualitative and quantitative analyses, we show that SVAM-Net provides SOTA performance for SOD on underwater imagery, exhibits significantly better generalization performance on challenging test cases than existing solutions, and achieves fast end-to-end inference on single-board devices. Moreover, we demonstrate that a delicate balance between robust performance and computational efficiency makes SVAM-Net<sup>Light</sup> suitable for real-time use by visually-guided underwater robots. Please refer to the <a href="http://www.roboticsproceedings.org/rss18/p048.pdf">paper</a> for detailed results; a video demonstration can be seen <a href="https://www.youtube.com/watch?v=SxJcsoQw7KI">here</a>.  
+												<br>
+												&nbsp; <i><strong><i class="fas fa-check-circle"></i> &nbsp; Update: </strong> accepted for publication at the <a href= "https://roboticsconference.org/">RSS 2022</a> </i>  
+												</p>
+											</div>
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="SESR">
+										<article>
+											<h3>Deep SESR: Simultaneous Enhancement and Super-Resolution</h3>
+											<p>
+												<a href="http://www.roboticsproceedings.org/rss16/p018.pdf">Paper (RSS 2020)</a> &nbsp;
+												<a href="https://arxiv.org/pdf/2002.01155.pdf">ArXiv</a> &nbsp; 
+												<a href="files/islam2020sesr.txt">Bibliography</a> &nbsp;
+												<a href="https://github.com/xahidbuffon/Deep-SESR">GitHub</a> &nbsp;
+												<a href="http://irvlab.cs.umn.edu/resources/ufo-120-dataset">UFO-120 Dataset</a> &nbsp;
+												<a href="https://youtu.be/8zBdFxaK4Os">Spotlight Talk</a>
+											</p>
+											<div class="row">
+												<div class="col-3 col-12-small">
+													<p align="justify">
+													In this project, we introduce the <strong>SESR</strong> (simultaneous enhancement and super-resolution) problem and provide an efficient solution for underwater imagery. Specifically, we present <strong>Deep SESR</strong>, a residual-in-residual network-based model that learns to restore perceptual image qualities for up to 4x higher spatial resolution. 
+													</p>
+												</div>
+												<div class="col-9 col-12-medium">
+													<a href="#SESR" class="image"><img src="images/sesr_1.jpg" alt="" /></a>
+													<a href="#SESR" class="image"><img src="images/sesr_2.jpg" alt="" /></a>
+												</div>
+											</div>
+											<p align="justify">
+											To supervise the large-scale training, we formulate a multi-modal objective function that addresses the chrominance-specific underwater color degradation, lack of image sharpness, and loss in high-level feature representation. It is also supervised to learn salient foreground regions in the image, which in turn guides the network to learn global contrast enhancement. Our <a href="https://youtu.be/8zBdFxaK4Os">Spotlight Talk</a> has more details! 
+											</p>
+
+											<div class="row">
+												<div class="col-7 col-12-medium">
+													<a href="#SESR" class="image"><img src="images/sesr_n.jpg" alt="" /></a>
+												</div>
+												<div class="col-5 col-12-small">
+												<p align="justify">
+												Moreover, we present <strong>UFO-120</strong>, the first dataset to facilitate large-scale SESR learning; it contains over 1500 training samples and a benchmark test set of 120 samples.
+												By thorough experimental evaluation on UFO-120 and several other standard datasets, we demonstrate that Deep SESR outperforms the existing solutions for underwater image enhancement and super-resolution. We also validate its generalization performance on several test cases that include underwater images with diverse spectral and spatial degradation levels, and also terrestrial images with unseen natural objects. See <a href="https://youtu.be/wEkTu2CPW-g">this video</a> for some demonstrations and refer to the <a href="http://www.roboticsproceedings.org/rss16/p018.pdf">paper</a> for detailed results. 
+											    </p> 
+												</div>
+											</div>  
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="FUNIE">
+										<article>
+											<h3>FUNIE-GAN: Fast Underwater Image Enhancement for Improved Perception</h3>
+											<p>
+												<a href="https://ieeexplore.ieee.org/document/9001231">Paper (RA-L)</a> &nbsp;
+												<a href="https://arxiv.org/pdf/1903.09766.pdf">ArXiv</a> &nbsp; 
+												<a href="files/islam2020fast.txt">Bibliography</a> &nbsp;
+												<a href="https://github.com/xahidbuffon/FUnIE-GAN">GitHub</a> &nbsp;
+												<a href="http://irvlab.cs.umn.edu/resources/euvp-dataset">EUVP Dataset</a>
+											</p>
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<p align="justify">
+													In this project, we design a fully-convolutional conditional GAN-based model for fast underwater image enhancement: <strong>FUnIE-GAN</strong>. We supervise its adversarial training by formulating an objective function that evaluates the perceptual image quality based on its global content, color, local texture, and style information.
+													We also present <strong>EUVP</strong>, a large-scale dataset of a paired and an unpaired collection of underwater images (of poor and good quality) that are captured using seven different cameras over various visibility conditions during oceanic explorations and human-robot collaborative experiments. The dataset and relevant information can be found <a href="http://irvlab.cs.umn.edu/resources/euvp-dataset">here</a>. <br> 
+													<i>
+														&nbsp; <strong><i class="fas fa-truck-monster"></i> &nbsp; Latest:</strong> FUnIE-GAN is now running on our <a href="http://irvlab.cs.umn.edu/minnebot">Aqua-8 MinneBot</a><br>
+														&nbsp; <i class="fas fa-truck-monster"></i> &nbsp; ...and soon to be ported on the <a href="http://irvlab.cs.umn.edu/other-projects/loco-auv">LoCO AUV</a>
+													</i>   
+													</p>
+												</div>
+												<div class="col-6 col-12-medium">
+													<a href="#FUNIE" class="image"><img src="images/funie_gif1.gif" alt="" /></a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 col-12-medium">
+													<a href="#FUNIE" class="image"><img src="images/funie_1.jpg" alt="" /></a> 
+												</div>
+											</div>
+
+											<p align="justify">
+											By thorough experiments, we demonstrate that FUnIE-GAN can learn to enhance perceptual image quality from both paired and unpaired training. More importantly, the enhanced images significantly boost the performance of several underwater visual perception tasks such as object detection, human pose estimation, and saliency prediction. In addition to providing state-of-the-art image enhancement performance, FUnIE-GAN offers <strong>148 FPS</strong> inference rate on Nvidia GTX 1080, <strong>48 FPS</strong> on Jetson AGX Xavier, and over <strong>25 FPS</strong> on Jetson TX2. Such fast run-times, particularly on the single-board platforms, makes it ideal for real-time use in robotic applications. Check out <a href="https://github.com/xahidbuffon/FUnIE-GAN">this repository</a> for the FUnIE-GAN models and associated training pipelines. 
+											</p>
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="R2R">
+										<article>
+											<h3>R2R-OpenPose: Robot-to-robot Relative Pose Estimation from Human Body-Pose</h3>
+											<p>
+												<a href="http://link.springer.com/article/10.1007/s10514-021-09985-6">Paper (AURO)</a> &nbsp;
+												<a href="https://arxiv.org/pdf/1903.00820.pdf">ArXiv</a> &nbsp; 
+												<a href="files/islam2019robot.txt">Bibliography</a> 
+											</p>
+											<div class="row">
+												<div class="col-5 col-12-medium">
+													<a href="#R2R" class="image"><img src="images/r2r_1.jpg" alt="" /></a>
+												</div>
+												<div class="col-7 col-12-small">
+													<p align="justify">
+													In this project, we propose a method to determine the 3D relative pose of pairs of communicating robots by using human pose-based key-points as correspondences. We adopt a <i>leader-follower</i> framework, where at first, the leader robot visually detects and triangulates the key-points using the state-of-the-art pose detector named <strong>OpenPose</strong>. Afterward, the follower robots match the corresponding 2D projections on their respective calibrated cameras and find their relative poses by solving the perspective-n-point (<strong>PnP</strong>) problem. 
+													In the proposed method, we design an efficient <strong>person re-identification</strong> technique for associating the mutually visible humans in the scene. Additionally, we present an iterative optimization algorithm to refine the associated key-points based on their local structural properties in the image space. <br>
+													&nbsp; <i><strong><i class="fas fa-check-double"></i> &nbsp; Update: </strong> accepted for publication at the <a href="https://www.springer.com/journal/10514">Autonomous Robots (AuRo)</a> journal</i>  
+													</p>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-4 col-12-medium">
+													<p align="justify">
+													We demonstrate that the proposed refinement processes are essential to establish accurate key-point correspondences across viewpoints. Furthermore, we evaluate the performance of the end-to-end pose estimation system through several experiments conducted in terrestrial and underwater environments. 
+												</p> 
+												</div>
+												<div class="col-8 col-12-small">
+													<p align="justify">
+													<a href="#R2R" class="image"><img src="images/r2r_2.gif" alt="" /></a>
+													</p>
+												</div>
+											</div>
+											<p align="justify">
+												Finally, we discuss the relevant operational challenges of this approach and analyze its feasibility for multi-robot cooperative systems in human-dominated social settings and feature-deprived environments such as underwater. Please refer to the <a href="https://arxiv.org/pdf/1903.00820.pdf">paper</a> for further details. 
+											</p> 
+
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="DDD">
+										<article>
+											<h3>DDD: Balancing Robustness and Efficiency Deep Diver Detection</h3>
+											<p>
+												<a href="https://ieeexplore.ieee.org/document/8543168">Paper (RA-L)</a> &nbsp;
+												<a href="https://arxiv.org/pdf/1809.06849.pdf">ArXiv</a> &nbsp;
+												<a href="https://github.com/xahidbuffon/Deep-Diver-Following">Code</a> &nbsp; 
+												<a href="files/islam2018towards.txt">Bibliography</a> 
+											</p>
+											<div class="row">
+												<div class="col-3 col-12-medium">
+													<a href="#DDD" class="image"><img src="images/ddd_pool.gif" alt="" /></a>
+												</div>
+												<div class="col-3 col-12-medium">
+													<a href="#DDD" class="image"><img src="images/ddd_bbd.gif" alt="" /></a>
+												</div>
+												<div class="col-6 col-12-small">
+													<p align="justify">
+													In this project, we explore the design and development of a class of robust diver-following algorithms for autonomous underwater robots. By considering the operational challenges for underwater visual tracking in diverse real-world settings, we formulate a set of desired features of a generic diver following algorithm. We attempt to accommodate these features and maximize general tracking performance by exploiting the SOTA deep object detection models: <strong>Faster R-CNN (Inception V2)</strong>, <strong>YOLO V2</strong>, <strong>Tiny YOLO</strong>, and <strong>SSD (MobileNet V2)</strong>. 
+													</p>
+												</div>
+											</div>
+												<p align="justify">
+												Subsequently, we design an architecturally simple <strong>CNN-based diver-detection model</strong> that is much faster than the SOTA deep models yet provides comparable detection performance. Each building block of the proposed model was fine-tuned in order to balance the trade-off between robustness and efficiency for a single-board setting under real-time constraints. 
+												We also validated its tracking performance and general applicability through numerous field experiments in pools and oceans. This detection model is used in the diver-following module of our <a href="http://irvlab.cs.umn.edu/minnebot">Aqua-8 MinneBot</a>. 
+												</p>
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="RoboChatGest">
+										<article>
+											<h3>Robo-Chat-Gest: Hand Gesture-based Robot Control and Reconfiguration</h3>
+											<p>
+												<a href="https://ieeexplore.ieee.org/document/8461197">Paper-1 (ICRA 2018)</a> &nbsp;
+												<a href="files/islam2018dynamic.txt">Bibliography-1</a> &nbsp;
+												<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837">Paper-2 (JFR)</a> &nbsp;
+												<a href="files/islam2018understanding.txt">Bibliography-2</a> 
+											</p>
+
+											<div class="row">
+												<div class="col-4 col-12-medium">
+													<a href="#RoboChatGest" class="image"><img src="images/RoboChatGest_pool.gif" alt="" /></a>
+												</div>
+												<div class="col-4 col-12-medium">
+													<a href="#RoboChatGest" class="image"><img src="images/RoboChatGest_bbd.gif" alt="" /></a>
+												</div>
+												<div class="col-4 col-12-small">
+													<p align="justify">
+													<strong>Robo-Chat-Gest</strong> introduces a real-time robot programming and parameter reconfiguration method for autonomous underwater robots using a set of intuitive and meaningful hand gestures. It is a syntactically simple framework and computationally more efficient than other existing grammar-based approaches. Find the Robo-Chat-Gest language rules in <a href="https://ieeexplore.ieee.org/document/8461197">this paper</a>!
+												</div>
+											</div>
+											<p align="justify">
+												The major components of Robo-Chat-Gest are: i) a simple set of hand-gestures to instruction mapping rules, (ii) a region selection mechanism to detect prospective hand gestures in the image-space, (iii) a CNN-based model for robust hand gesture recognition, and (iv) a Finite-State Machine (FSM) to efficiently decode complete instructions from the sequence of gestures. 
+												The key aspect of this framework is that it can be easily adopted by divers for communicating simple instructions to underwater robots without using artificial tags such as fiducial markers or requiring them to memorize a potentially complex set of language rules. 
+												We thoroughly analyze and discuss its practical utility and usability benefits in <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837">this paper</a>.   
+											</p>
+										</article>
+									</div>
+								</section>
+
+								<section, id="DataPapers">
+								<hr class="major" />
+									<header class="major">
+										<h2>Review and Dataset Papers</h2>
+									</header>
+									<div class="mini-posts", id="SUIM">
+										<article>
+											<h3>Semantic Segmentation of Underwater Imagery: Dataset and Benchmark
+											</h3>
+											<p>
+												<a href="https://ieeexplore.ieee.org/document/9340821">Paper (IROS 2020)</a> &nbsp; 
+												<a href="https://arxiv.org/pdf/2004.01241.pdf">ArXiv</a> &nbsp; 
+												<a href="files/islam2020suim.txt">Bibliography</a> &nbsp;
+												<a href="https://github.com/xahidbuffon/SUIM-Net">GitHub</a> &nbsp;
+												<a href="http://irvlab.cs.umn.edu/resources/suim-dataset">USR-248 Dataset</a> 
+											</p>
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<p align="justify">
+													Semantic segmentation of underwater scenes and pixel-level detection of salient objects are critically important features for visually-guided AUVs. The existing solutions are either too application-specific or outdated, despite the rapid advancements of relevant literature in the terrestrial domain. In this project, we attempt to address these limitations by presenting the first large-scale dataset for semantic Segmentation of Underwater IMagery (<strong>SUIM</strong>) for general-purpose robotic applications. In the proposed SUIM dataset, we consider eight object categories: fish (and other vertebrates), coral reefs (and other invertebrates), aquatic plants, wrecks/ruins, human divers, robots/instruments, and sea-floor. 
+													It contains over 1500 natural underwater images and their ground truth semantic labels (human-annotated); it also includes a test set of 110 samples for benchmark evaluation. These images have been selected from large-scale datasets named <a href="http://irvlab.cs.umn.edu/resources/euvp-dataset">EUVP</a>, <a href="http://irvlab.cs.umn.edu/resources/usr-248-dataset">USR-248</a>, and <a href="http://irvlab.cs.umn.edu/resources/ufo-120-dataset">UFO-120</a>, which we previously released for underwater image enhancement and super-resolution tasks. The dataset and relevant resources are available at <a href="http://irvlab.cs.umn.edu/resources/suim-dataset">here</a>.
+ 													<br> 
+													&nbsp; <i><strong><i class="fas fa-check-circle"></i> &nbsp; Update: </strong> accepted for publication at the <a href="https://www.iros2020.org/">IROS-2020</a> </i>  
+													</p>
+												</div>
+												<div class="col-6 col-12-medium">
+													<a href="#SUIM" class="image"><img src="images/suim_fig12.jpg" alt="" /></a>
+												</div>
+												
+											</div>
+
+											<p align="justify">
+											 We also present a comprehensive benchmark evaluation of several state-of-the-art semantic segmentation approaches named DeepLab, PSPNet, UNet, SegNet, and FCN on the SUIM dataset. We configured several variants of these models, then evaluated and compared their performances based on standard metrics.   
+											 Additionally, we present a fully-convolutional encoder-decoder model named <strong>SUIM-Net</strong>, which offers a considerably faster run-time than the SOTA approaches while achieving competitive semantic segmentation performance. 
+											 Check out this <a href="https://github.com/xahidbuffon/SUIM-Net">repository</a> for more information and refer to the <a href="https://arxiv.org/pdf/2004.01241.pdf">paper</a> for detailed results and performance analysis. 
+											</p>
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="SRDRM">
+										<article>
+											<h3>Underwater Image Super-Resolution using Deep Residual Multipliers</h3>
+											<p>
+												<a href="https://ieeexplore.ieee.org/document/9197213">Paper (ICRA 2020)</a> &nbsp; 
+												<a href="https://arxiv.org/pdf/1909.09437.pdf">ArXiv</a> &nbsp; 
+												<a href="files/islam2020srdrm.txt">Bibliography</a> &nbsp;
+												<a href="https://github.com/xahidbuffon/SRDRM">GitHub</a> &nbsp;
+												<a href="http://irvlab.cs.umn.edu/resources/usr-248-dataset">USR-248 Dataset</a> 
+											</p>
+											<div class="row">
+												<div class="col-7 col-12-medium">
+													<a href="#SRDRM" class="image"><img src="images/srdrm_1b.jpg" alt="" /></a>
+												</div>
+												<div class="col-5 col-12-small">
+													<p align="justify">
+													Single Image Super-Resolution (<strong>SISR</strong>) allows zooming-in interesting image regions for detailed visual perception. 
+													In this project, we design a deep residual network-based generative model for 2x, 4x, and 8x SISR of underwater imagery. We provide a generative and an adversarial training pipeline for the model, which we refer to as <strong>SRDRM</strong> and <strong>SRDRM-GAN</strong>, respectively.  <br>
+													&nbsp; <i><strong><i class="fas fa-check-circle"></i> &nbsp; Update: </strong> accepted for publication at the <a href="http://icra2020.org/">ICRA-2020</a> </i>  
+													</p>
+												</div>
+											</div>
+
+											<p align="justify">
+											In our implementation, both SRDRM and SRDM-GAN learn to generate 640 x 480 images from respective inputs of size 320 x 240, 160 x 120, or 80 x 60. 
+											For the supervised training, we use natural underwater images which we collected by several oceanic explorations and field trials. We also included images from publicly available online media resources such as <i class="fab fa-youtube"></i> YouTube and <i class="fab fa-flickr"></i> Flickr. We have released this compiled dataset named <strong>USR-248</strong> for academic research purposes <a href="http://irvlab.cs.umn.edu/resources/usr-248-dataset">here</a>.
+											</p>
+
+											<div class="row">
+												<div class="col-12 col-12-medium">
+												<a href="#SRDRM" class="image"><img src="images/srdrm_3a.jpg" alt="" /></a>
+												</div>
+											</div>
+
+											<p align="justify">
+												We validate the effectiveness of SRDRM and SRDRM-GAN through qualitative and quantitative experiments and compare the results with several state-of-the-art models. 
+												We also analyze their practical feasibility for applications such as scene understanding and attention modeling in noisy visual conditions. See this <a href="https://youtu.be/LrmhR25mNU8">Virtual Talk</a> for more information and refer to the <a href="https://arxiv.org/pdf/1909.09437.pdf">paper</a> for detailed results and performance analysis. 
+											</p>	
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="PFollow">
+										<article>
+											<h3>Person Following by Autonomous Robots: A Categorical Overview</h3>
+											<p>
+												<a href="https://journals.sagepub.com/doi/10.1177/0278364919881683">Paper (IJRR)</a> &nbsp;
+												<a href="https://arxiv.org/pdf/1803.08202.pdf">ArXiv</a> &nbsp; 
+												<a href="files/islam2019person.txt">Bibliography</a> 
+											</p>
+											<div class="row">
+												<div class="col-12 col-12-medium">
+												<a href="#PFollow" class="image"><img src="images/ppic.jpg" alt="" /></a>
+												</div>
+											</div>
+											<p align="justify">
+											A wide range of human-robot collaborative applications in diverse domains such as manufacturing, health care, the entertainment industry, and social interactions, require an autonomous robot to follow its human companion. Different working environments and applications pose diverse challenges by adding constraints on the choice of sensors, the degree of autonomy, and dynamics of a person-following robot. Researchers have addressed these challenges in many ways and contributed to the development of a large body of literature. 
+											This paper provides a comprehensive overview of the literature by categorizing different aspects of person-following by autonomous robots. Also, the corresponding operational challenges are identified based on various design choices for <strong>ground</strong>, <strong>underwater</strong>, and <strong>aerial</strong> scenarios. In addition, state-of-the-art methods for <strong>perception</strong>, <strong>planning</strong>, <strong>control</strong>, and <strong>interaction</strong> are elaborately discussed and their applicability in varied operational scenarios are presented. Then, some of the prominent methods are qualitatively compared, corresponding practicalities are illustrated, and their feasibility is analyzed for various usecases. Furthermore, several <strong>prospective application areas</strong> are identified, and <strong>open problems</strong> are highlighted for future research.
+											</p>
+										</article>
+									</div>
+								</section>
+
+
+
+
+								<section, id="Colab">
+								<hr class="major" />
+									<header class="major">
+										<h2>Collaborations</h2>
+									</header>
+									<div class="mini-posts", id="UGAN">
+										<article>
+											<h3>UGAN: Underwater Image Enhancement by Generative Adversarial Networks (GANs)</h3>
+											<div class="row">
+												<div class="col-7 col-12-small">
+													<p align="justify">
+													I worked in this project lead by our former colleague <a href="https://cameronfabbri.github.io/">Cameron Fabbri</a> who designed a GAN-based model (named UGAN) to improve the quality of underwater imagery. The objective was to enhance noisy input images to boost the performance of various vision-based tasks such as detection and tracking; I was involved in the emperical analysis of these performance margins. <br> <br>
+													
+													The <a href="https://ieeexplore.ieee.org/document/8460552">UGAN paper  (ICRA 2018)</a> is one of the most cited papers on underwater image enhancement in recent times; check out the UGAN models and associated training pipelines in <a href="https://github.com/cameronfabbri/Underwater-Color-Correction">this repository</a>.
+													</p>
+												</div>
+												<div class="col-5 col-12-medium">
+													<a href="#UGAN" class="image"><img src="images/ugan.png" alt=""/></a>
+												</div>
+											</div>
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="CONVOY">
+										<article>
+											<h3>Underwater Multi-Robot Convoying using Visual Tracking by Detection</h3>
+											<div class="row">
+											<div class="col-7 col-12-small">
+												<p align="justify">
+												I was involved in <a href="http://www.cim.mcgill.ca/~mrl/robot_tracking/">this project</a> of <a href="http://www.cim.mcgill.ca/~mrl/index.html">Mobile Robotics Lab @McGill University</a> lead by <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a> (now an Assistant Professor <a href="https://web.cs.toronto.edu/">@UToronto</a>). 
+												He introduced a robust multi-robot convoying approach relying on visual detection of the leading agent, thus enabling target following in unstructured 3D environments. 
+												The solution was tested on extensive footage of an underwater swimming robot in ocean settings. An empirical comparison of multiple tracker variants was presented, which included several CNN-based models as well as frequency-based model-free trackers.  
+												<br> <br>
+
+
+												I took part in the evaluation of our frequency-based <a href="http://ieeexplore.ieee.org/document/7989516/">MDPM tracker</a> for the emperical analysis. A video demonstration of the multi-robot convoying can be seen <a href="https://youtu.be/Em7V-vBApHc">here</a>; please refer to the <a href="https://ieeexplore.ieee.org/document/8206280/">paper (IROS 2017)</a> for more information. 
+												</p>
+											</div>
+											<div class="col-5 col-12-medium">
+													<a href="#CONVOY" class="image"><img src="images/convoy.png" alt=""/></a>
+											</div>
+
+											</div>
+										</article>
+									</div>
+									<hr class="major" />
+
+									<div class="mini-posts", id="Mentor">
+										<article>
+											<div class="row">
+											<div class="col-5 col-12-medium">
+												<h3><i class="fas fa-user-friends"></i> Other Collaborators</h3>
+												<p align="justify">
+													I regulary collaborate with the current Ph.D. students at the IRVLAB. In particular, I heavily interacted with <a href="http://irvlab.cs.umn.edu/people/chelsey-edge">Chelsey Edge</a>, <a href="https://sites.google.com/view/sadman-sakib-enan/home">Sadman Sakib Enan</a>, <a href="http://irvlab.cs.umn.edu/people/michael-fulton">Michael Fulton</a>, and <a href="https://jungseokhong.github.io/">Jungseok Hong</a> on several <a href="Proj">projects</a> in the last few years. I am currently working with <a href="https://www.linkedin.com/in/jiawei-mo/">Jiawei Mo</a> and <a href="http://irvlab.cs.umn.edu/people/karin-de-langis">Karin de Langis</a> on separate projects. Also, <a href="https://www.linkedin.com/in/ruobing-wang-054562157/">Ruobing Wang</a> is working with me on the <a href="https://www.linkedin.com/in/ruobing-wang-054562157/">SVAM</a> project.
+												</p>
+											</div>
+											<div class="col-7 col-12-small">
+											   <h3><i class="fas fa-users-cog"></i> UG Students Whom I Mentored and Worked With</h3>
+												<p>
+												    &nbsp;  &nbsp; - <a href="https://www.linkedin.com/in/peigen-luo-30ba21147/">Peigen Luo</a> (on <a href="#SESR">SESR</a> and <a href="#SRDRM">SRDRM</a> project); he is now a graduate student at UIUC <br>
+													&nbsp;  &nbsp; - <a href="https://www.xiayouya.com/">Youya Xia</a> (on <a href="#FUNIE">FUNIE-GAN</a> project); she is now a PhD student at Cornell <br>
+													&nbsp;  &nbsp; - Yuyang Xiao (on <a href="https://github.com/xahidbuffon/SUIM-Net">SUIM</a> project); he is now a graduate student at UIUC <br>
+													&nbsp;  &nbsp; - <a href="https://www.linkedin.com/in/marc-ho-96b530193/">Marc Ho</a> (on <a href="#RoboChatGest">Robo-Chat-Gest</a> project); he is now working at Optum <br>
+													&nbsp;  &nbsp; - <a href="http://irvlab.cs.umn.edu/people/muntaqim-mehtaz">Muntaqim Mehtaz</a> and <a href="http://irvlab.cs.umn.edu/people/christopher-morse">Christopher Morse</a> (on <a href="https://github.com/xahidbuffon/SUIM-Net">SUIM</a> project); they are current <br> 
+													&nbsp;  &nbsp; &nbsp; students at the UMN
+												</p>
+											</div>
+											</div>
+										</article>
+									</div>
+								</section>
+								<hr class="major" />
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Pointers</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="#Enrol">Academic Enrollments</a></li>
+										<li>
+											<span class="opener"><strong>Research Highlights</strong></span>
+											<ul>
+												<li><a href="projects.html#VAM"><strong>SVAM:</strong> Saliency-guided Visual Attention Modeling</a></li>
+												<li><a href="projects.html#SESR"><strong>Deep SESR:</strong> Simultaneous Enhancement and Super-Resolution</a></li>
+												<li><a href="projects.html#FUNIE"><strong>FUNIE-GAN:</strong> Fast Underwater Image Enhancement for Improved Perception</a></li>
+												<li><a href="projects.html#R2R"><strong>R2R-OpenPose:</strong> Robot-to-robot Relative Pose Estimation from Human Body-Pose</a></li>
+												<li><a href="projects.html#DDD"><strong>DDD:</strong> Balancing Robustness and Efficiency Deep Diver Detection</a></li>
+												<li><a href="projects.html#RoboChatGest"><strong>Robo-Chat-Gest:</strong> Hand Gesture-based Robot Control and Reconfiguration</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Dataset & Review Papers</span>
+											<ul>
+												<li><a href="projects.html#SUIM"><strong>SUIM and SUIM-Net:</strong> on Semantic Segmentation of Underwater Imagery</a></li>
+												<li><a href="projects.html#SRDRM"><strong>USR-248 and SRDRM:</strong>  on Underwater Image Super-Resolution (2X/4X/8X)</a></li>
+												<li><a href="projects.html#PFollow"><strong>Holistic Review:</strong> on Person Following by Autonomous Robots (UGV/AUV/UAV)</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Collaborations</span>
+											<ul>
+												<li><a href="projects.html#UGAN"><strong>UGAN:</strong> Underwater Image Enhancement by Generative Adversarial Networks</a></li>
+												<li><a href="projects.html#CONVOY"><strong>Underwater Multi-Robot Convoying</strong> using Visual Tracking by Detection</a></li>
+												<li><a href="projects.html#Mentor"><strong>Mentoring Experience</strong></a></li>
+											</ul>
+										</li>
+										<li><a href="#Pub"><strong>List of Publications</strong></a></li>
+										<li><a href="#Indus">Industry Experience</a></li>
+										<li><a href="#Awa">Awards & Achievements</a></li>
+										<li><a href="files/resume_mji.pdf">Resume (12/30/21) &nbsp; <i class="fas fa-file"></i></a></li>
+										<li><a href="#Extra">Weekend Tweakends!</a></li>
+									</ul> <br>
+									<p align="center">
+										<a href="https://github.com/xahidbuffon">
+											<strong><i class="icon brands fa-github"></i> To GitHub</strong>
+										</a>
+									</p>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Recent Stories!</h2>
+									</header>
+									<div class="mini-posts">
+									    <article>
+											<a href="https://www.linkedin.com/posts/eceflorida_so-pleased-to-welcome-dr-md-jahidul-islam-activity-6878765510666833920-pD9Q" class="image"><img src="images/uf_first.jpeg" alt="" /></a>
+											<p> <strong>Dec 2021:</strong> Joining <a href= "https://www.ece.ufl.edu/">ECE, University of Florida</a> 
+											as a tenure-track Assistant Professor this Spring!</p>
+										</article>
+									    <article>
+											<a href="https://www.linkedin.com/posts/mdjahidulislam_had-a-wonderful-time-working-with-liu-ren-activity-6867632673679142912-tCyj" class="image"><img src="images/bosch_last.jpg" alt="" /></a>
+											<p> <strong>Nov 2021:</strong> Ended a wonderful 5-month tenure working at <a href= "https://www.bosch.us/">BOSCH</a> 
+											RHI3 team as a Research Scientist (@Sunnyvale campus).</p>
+										</article>
+									    <article>
+											<a href="http://www.roboticsproceedings.org/rss16/p018.pdf" class="image"><img src="images/svamnet.jpg" alt="" /></a>
+											<p> <strong>Nov 2020:</strong> Our <a href= "https://arxiv.org/pdf/2011.06252.pdf">SVAM pre-print</a> 
+											is out; accepted at the <a href= "https://roboticsconference.org/">RSS 2022</a>. [<a href= "projects.html#SVAM">more</a>]</p>
+										</article>
+										<article>
+											<a href="http://www.roboticsproceedings.org/rss16/p018.pdf" class="image"><img src="images/SESR_RSS_20.jpg" alt="" /></a>
+											<p> <strong>July 2020:</strong> We presented <a href= "http://www.roboticsproceedings.org/rss16/p018.pdf">Deep SESR paper</a> 
+											at the <a href= "https://roboticsconference.org/">RSS 2020 (virtual)</a>. 
+											The workshops and technical sessions were really good.</p>
+										</article>
+										<article>
+											<a href="https://github.com/xahidbuffon/SUIM-Net" class="image"><img src="images/suim_fig1.jpg" alt="" /></a>
+											<p> <strong>June 2020:</strong> Our <a href= "https://arxiv.org/abs/2004.01241">SUIM-Net paper</a> 
+											got accepted at the <a href= "https://www.iros2020.org/">IROS 2020</a>. We look forward to present it either 
+											in Las Vegas or virtually (more likely).</p>
+										</article>
+										<article> 
+											<a href="https://github.com/xahidbuffon/FUnIE-GAN" class="image"><img src="images/funie_1a.jpg" alt="" /></a> 
+											<p> <strong>Feb 2020:</strong> Our <a href= "https://ieeexplore.ieee.org/document/9001231">FUnIE-GAN paper</a> 
+											is published at the <a href= "http://www.ieee-ras.org/publications/ra-l">RA-L</a>.   
+											It is my fourth journal paper, and perhaps the most favourite one. [I.F.: 3.61]</p>
+										</article>
+										<article> 
+											<a href="https://github.com/xahidbuffon/SRDRM" class="image"><img src="images/srdrm_1b.jpg" alt="" /></a> 
+											<p> <strong>Jan 2020:</strong> Our <a href= "https://arxiv.org/abs/1909.09437">SRDRM paper</a> got accepted 
+											at the <a href= "http://icra2020.org/">ICRA 2020</a>. We are going to present this <del>in Paris</del> 
+											virtually (guess why!). 
+											</p>
+										</article>
+										<article> 
+											<a href="https://arxiv.org/abs/1803.08202" class="image"><img src="images/_ppic_.jpg" alt="" /></a> 
+											<p> <strong>Oct 2019:</strong> Our extensive <a href= "https://journals.sagepub.com/doi/10.1177/0278364919881683">review paper</a> 
+											on <i>person following by autonomous robots</i> is published at the <a href= "http://journals.sagepub.com/home/ijr">IJRR</a>. [I.F.: 6.134]</p>
+										</article>
+										<article> 
+											<a href="https://www.qualcomm.com/" class="image"><img src="images/Qme.jpeg" alt="" /></a> 
+											<p> <strong>Sept 2019:</strong> Back to school after my internship at <a href= "https://www.qualcomm.com/">Qualcomm</a>; 
+											had a great experience at work and a <i>summer well spent</i> in the Bay Area. </p>
+										</article>
+										<article> 
+											<a href="https://www.cs.umn.edu/news/cse-phd-students-named-doctoral-dissertation-fellows-1" class="image"><img src="images/umn_cover.jpg" alt="" /></a> 
+											<p> <strong>Apr 2019:</strong> Received the prestigious <a href= "https://www.cs.umn.edu/news/cse-phd-students-named-doctoral-dissertation-fellows-1">
+											Doctoral Dissertation Fellowship (DDF)</a> award for 2019-20 academic year.</p>
+										<article>
+										<p align="right">
+											<a href="index.html"><span style="color: red;">
+												<i class="fas fa-home"></i> <strong>Back to Home</strong></span>
+											</a>
+										</p>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<!--<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto: islam034@umn.edu">islam034@umn.edu</a></li>
+										<li class="icon solid fa-briefcase"><a href="http://irvlab.cs.umn.edu/">Interactive Robotics and Vision Lab</a>, 
+										150 Shepherd Laboratories, 100 Union St SE, Minneapolis, MN 55455, USA. </li>
+									</ul>
+								</section>-->
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Md Jahidul Islam. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
