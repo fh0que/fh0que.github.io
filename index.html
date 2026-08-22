@@ -111,7 +111,7 @@
       </section>
 
       <section class="section career-block" id="career">
-        <div class="career-tabs" role="tablist" aria-label="Teaching, industry and research">
+        <div class="career-tabs" role="tablist" aria-label="Teaching, industry, research and labs">
           <button type="button" class="career-tab active" data-tab="teaching" role="tab" aria-selected="true" aria-controls="teaching-panel" id="teaching-tab">
             <span class="career-tab-dot"></span>teaching.md
           </button>
@@ -120,6 +120,9 @@
           </button>
           <button type="button" class="career-tab" data-tab="research" role="tab" aria-selected="false" aria-controls="research-panel" id="research-tab">
             <span class="career-tab-dot"></span>research.md
+          </button>
+          <button type="button" class="career-tab" data-tab="labs" role="tab" aria-selected="false" aria-controls="labs-panel" id="labs-tab">
+            <span class="career-tab-dot"></span>anchor-ai-labs.md
           </button>
         </div>
 
@@ -224,11 +227,54 @@
             <p class="pub-note">Proposed two enhanced evolutionary algorithms addressing limitations of existing methods.</p>
           </div>
         </div>
+
+        <div class="career-panel" id="labs-panel" data-tab="labs" role="tabpanel" aria-labelledby="labs-tab" hidden>
+          <div class="section-head">
+            <span class="comment">// 06</span>
+            <h2>Anchor AI Labs</h2>
+          </div>
+
+          <p class="lede">
+            Anchor AI Labs builds applied AI for problems that matter socially rather than
+            commercially — projects aimed at families, health access, and everyday communication
+            in Bangladesh.
+          </p>
+
+          <div class="entry">
+            <div class="entry-date">Ongoing</div>
+            <div>
+              <p class="entry-title">Family Shiksha</p>
+              <p class="entry-org">Family values &amp; everyday manners</p>
+              <p class="entry-body">
+                A non-profit educational project addressing a gap in the way the new generation is
+                growing up: children increasingly unfamiliar with family manners — how to speak to
+                parents and siblings, and above all how to treat elders. Delivered as an app of
+                short videos, each situation shown from more than one perspective.
+              </p>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-date">Ongoing</div>
+            <div>
+              <p class="entry-title">Doctor Bari</p>
+              <p class="entry-org">Health access</p>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-date">Ongoing</div>
+            <div>
+              <p class="entry-title">Agentic Voice Calls</p>
+              <p class="entry-org">Conversational AI over the phone</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="section" id="projects">
         <div class="section-head">
-          <span class="comment">// 06</span>
+          <span class="comment">// 07</span>
           <h2>Current Projects</h2>
         </div>
 
@@ -255,7 +301,7 @@
 
       <section class="section" id="skills">
         <div class="section-head">
-          <span class="comment">// 07</span>
+          <span class="comment">// 08</span>
           <h2>Courses Qualified to Teach &amp; Skills</h2>
         </div>
 
@@ -315,7 +361,7 @@
 
       <section class="section" id="references">
         <div class="section-head">
-          <span class="comment">// 08</span>
+          <span class="comment">// 09</span>
           <h2>References</h2>
         </div>
 
@@ -354,7 +400,7 @@
 </main>
 <script>
   (function () {
-    var tabKeys = ['teaching', 'industry', 'research'];
+    var tabKeys = ['teaching', 'industry', 'research', 'labs'];
     var tabs = document.querySelectorAll('.career-tab');
     var panels = document.querySelectorAll('.career-panel');
 
