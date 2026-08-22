@@ -94,6 +94,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
   text-overflow: ellipsis;
 }
 .tabbar-title strong { color: var(--amber-soft); font-weight: 500; }
+.tabbar-title a { text-decoration: none; }
+.tabbar-title a:hover strong { color: var(--amber); }
 .cursor-blink {
   display: inline-block;
   margin-left: 2px;
